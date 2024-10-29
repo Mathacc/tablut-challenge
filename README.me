@@ -1,0 +1,75 @@
+# Tablut Challenge
+
+This project is part of the Masters in Artificial Intelligence at the University of Bologna (Unibo). It involves developing an AI agent to play the game of Tablut using Python.
+
+## Introduction
+
+Tablut is a historical strategy board game from the Tafl family, originating in Scandinavia. The game involves two players: one controlling the Swedes and the other controlling the Muscovites. The objective for the Swedes is to move their king to one of the corner squares, while the Muscovites aim to capture the king.
+
+# Tablut Game
+
+Tablut is an ancient Scandinavian board game belonging to the **Tafl family** of games, sometimes known as Viking Chess. This asymmetric strategy game pits two players against each other with opposing goals: **defend and escape** or **capture**. The game has origins in medieval Northern Europe and is a fun, historical challenge for players who enjoy tactical board games.
+
+## Game Setup
+
+- **Board:** 9x9 grid
+- **Pieces:**
+  - **King (1 piece):** Placed in the center of the board (the "throne").
+  - **Defenders (White pieces):** 8 pieces surrounding the King.
+  - **Attackers (Black pieces):** 16 pieces positioned around the edges of the board.
+
+## Objectives
+
+- **Defenders (White Player):** Help the King reach any edge of the board to escape and win.
+- **Attackers (Black Player):** Capture the King before he can escape.
+
+## How to Play
+
+### Movement
+
+- **All pieces** move orthogonally (vertically or horizontally) any number of squares, similar to a rook in chess.
+- **No jumping:** Pieces cannot jump over other pieces.
+- **The King** may move onto and pass over the throne square, while other pieces cannot.
+
+### Special Squares
+
+- **Throne (Center Square):** Only the King can occupy this square, but Attackers can use it to trap the King.
+- **Corner Squares (Escape Squares):** Only the King can occupy these squares as his escape route.
+
+### Capturing Pieces
+
+- **Regular Pieces (Defenders and Attackers):** A piece is captured by surrounding it on two opposite sides (orthogonally) with enemy pieces, then removed from the board.
+- **King Capture:** The King must be surrounded on **four sides** to be captured, except when adjacent to the throne, where only **three attackers** are needed.
+
+## Winning Conditions
+
+- **White Wins** if the King reaches any edge of the board.
+- **Black Wins** if the King is surrounded and captured according to the capture rules before he escapes.
+
+## Acknowledgments
+
+Tablut and other Tafl games are historical games that offer a glimpse into medieval Scandinavian culture and strategy!
+
+---
+
+
+## Project Initialization
+
+To get started with the project, follow these steps:
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/Mathacc/tablut-challenge.git
+    cd tablut-challenge
+    ```
+
+2. **Create a virtual environment:**
+    ```sh
+    python -m venv .venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the required dependencies:**
+    ```sh
+    pip install -r requirements.txt
+    ```
